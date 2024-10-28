@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main()
+{
+	char a; //declaring the variables
+	
+	printf("Enter a character:\n"); //user input
+	scanf(" %c",&a);
+	
+	//to check if the character is lowercase
+	if (a>='a'&& a<='z')
+	{ printf("The given character is lowercase");
+	}
+	//to check if the character is uppercase
+	else if (a>= 'A' && a<='Z')
+	{ printf("The given character is uppercase");
+	}
+	//to check if the character is a digit
+	else if(a>='0' && a<='9')
+	{ printf("The given character is a digit");}
+	else 
+	//to check if the character is a special symbol
+	{ printf("The given character is a special symbol");
+	}
+	
+	return 0;
+	}
