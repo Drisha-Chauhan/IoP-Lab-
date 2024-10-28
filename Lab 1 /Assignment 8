@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main()
+{
+	long seconds; 
+	float days,hours,minutes; //declaring variables
+	
+	seconds= 31558150;
+	
+	days = seconds/86400; 
+	seconds=seconds% 86400; //the new value of seconds is the remainder left
+	
+	hours=seconds/3600; 
+	seconds= seconds% 3600;
+	
+	minutes = seconds/60;
+	seconds= seconds%60;
+	
+	// Displaying result
+	printf("No of days= %0.2f \n",days);
+	printf("No of hours= %0.2f \n",hours);
+	printf("No of seconds= %0.2f \n",seconds);
+}
