@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main()
+{
+	int seconds,h,m,s; //declaring variables
+	
+	printf("Enter the time in seconds: \n"); //taking user input 
+	scanf("%d",&seconds);
+	
+	h=seconds/3600;     //assigning values to the variables using modulus 
+	seconds= seconds%3600;
+	
+	m=seconds/60;
+	seconds=seconds%60;
+	
+	s=seconds;
+	
+	//displaying results
+	printf("The entered time is: %d hours, %d minutes, %d seconds",h,m,s);
+	
+	return 0;
+	
+}
