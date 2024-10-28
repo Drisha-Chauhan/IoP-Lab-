@@ -1,0 +1,34 @@
+#include<stdio.h>
+int main()
+{
+	int com,sales; //defining the variables 
+	
+	printf("Enter the sales amount: \n"); //taking input from the user
+	scanf("%d",&sales);
+	
+	//finding comission for different sales amount 
+	
+	if (sales<=500)
+	
+	{
+	com=sales/20;
+	}
+	
+	else if(sales>500 && sales<=2000)
+	{
+	com=35+sales/10;}
+		
+    else if(sales>2000 && sales<=5000)
+    {
+    com=185+sales*3/25;
+    }
+	else (sales>5000);
+	{
+	com=sales/8;
+	}
+	
+	//displaying final result to the user
+	printf("The commission obtained by the sales representative is:%d \n",com);
+	
+	return 0;
+	}
