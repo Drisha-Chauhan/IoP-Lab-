@@ -1,0 +1,45 @@
+#include<stdio.h>
+int main()
+{
+	int tot,a,b,c,d,e;
+	
+	printf("Enter the marks obtained in Maths:\n");
+	scanf("%d",&a);
+	
+	printf("Enter the marks obtained in Physics:\n");
+	scanf("%d",&b);
+	
+	printf("Enter the marks obtained in Chemistry:\n");
+	scanf("%d",&c);
+	
+	printf("Enter the marks obtained in English:\n");
+	scanf("%d",&d);
+	
+	printf("Enter the marks obtained in Programming:\n");
+	scanf("%d",&e);
+	
+	tot= a+b+c+d+e;
+	
+	if (tot=500 || tot>=400)
+	printf("Division:A");
+	
+	else if (tot>=300 && tot<400)
+	printf("Division:B");
+	
+	else if(tot>=200 && tot<300)
+	printf("Division:C");
+	
+	else if(tot>=100 && tot<200)
+	printf("Division:C");
+	
+	else if(tot=0 || tot<100)
+	printf("Fail");
+	
+	else 
+	printf("The marks entered are not valid");
+	
+	return 0;
+		
+	
+	
+}
