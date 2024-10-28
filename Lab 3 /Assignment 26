@@ -1,0 +1,41 @@
+#include<stdio.h>
+int main()
+{
+	int N,i;
+	int SumOdd=0, SumEven=0;
+	
+	//taking input from the user
+	printf("Enter the value of N: \n");
+	scanf("%d",&N);
+	
+	//Checking for invalid user input 
+	if (N<1)
+	{printf("Please enter a positive non zero value of N \n");
+	
+	return 1; }
+	
+	//Calculating the sum of odd and even numbers
+	for(i=1;i<=N;i++)
+	{
+		if(i%2==0)
+		{ 
+		  SumEven= SumEven + i;
+		  
+		}
+		
+		else
+		{
+			SumOdd= SumOdd + i;
+		}
+	}
+		
+		//Displaying the results
+		
+		printf("The sum of even integers till %d is %d \n",N,SumEven);
+		printf("The sum of odd integers till %d is %d \n",N,SumOdd);
+		
+		return 0;
+	}
+
+	
+	
