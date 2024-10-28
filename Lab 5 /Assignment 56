@@ -1,0 +1,28 @@
+#include<stdio.h>
+int main()
+{
+	int a[10],count=0;
+	int oddcount=0;
+	
+	printf("Enter the values of the array: \n");
+	
+	for (int i=0;i<=9;i++)
+	{
+		scanf("%d",&a[i]);
+		count++;
+	}
+	
+	for(int i=0;i<=9;i++)
+	{
+		if (a[10]%2!=0)
+		{
+			oddcount++;
+		}
+		
+	printf("The no of elemenst in the array are: %d \n", count);
+	printf("The no of odd elements in the array are: %d \n", oddcount);
+		
+	return 0;
+	}
+	
+}
