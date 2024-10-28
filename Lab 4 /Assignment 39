@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{
+	float n,i,p=1,sum=0;
+	
+	printf("Enter the value of N: \n");
+	scanf("%f",&n);
+	
+	for(i=1;i<=n;i++)
+	{
+	 p=p*i;
+	 
+	 sum = sum + i/p;
+	 	
+	}
+	
+	printf("Sum: %f \n",sum);
+	
+	
+	return 0;
+}
