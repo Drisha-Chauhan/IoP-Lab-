@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+// Function to calculate gross salary
+float calculateGrossSalary(float basicSalary, float allowances, float deductions) {
+    return basicSalary + allowances - deductions;
+}
+
+int main() {
+    float basicSalary, allowances, deductions, grossSalary;
+
+    // Input basic salary
+    printf("Enter Basic Salary: ");
+    scanf("%f", &basicSalary);
+
+    // Input allowances
+    printf("Enter Allowances: ");
+    scanf("%f", &allowances);
+
+    // Input deductions
+    printf("Enter Deductions: ");
+    scanf("%f", &deductions);
+
+    // Calculate gross salary
+    grossSalary = calculate GrossSalary(basicSalary, allowances, deductions);
+
+    // Output the gross salary
+    printf("Gross Salary: %.2f\n", grossSalary);
+
+    return 0;
+}
+
+
