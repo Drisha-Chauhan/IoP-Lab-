@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main()
+ {
+
+	int n; //Declaring the variable
+
+	printf("Enter the value of N: "); //Taking input from the user 
+	scanf("%d", &n); //Assigning the input to the variable
+
+	printf("Odd numbers from 1 to %d:\n", n);
+
+	for (int i = 1; i <= n; i += 2) //Loop keeps performing +2 such that the value of i is always odd
+
+	{ printf("%d ",i);
+	}
+ 	return 0;
+
+	}
