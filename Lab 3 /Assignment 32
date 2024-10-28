@@ -1,0 +1,42 @@
+#include<stdio.h>
+int main()
+{
+    int max1,max2, n, i;
+    int a[n];
+    
+	printf("total number=");
+    scanf("%d", &n);
+   
+   printf("enter the array");
+   for( i=0; i<n; i++)
+{
+    scanf("%d", &a[i]);
+}      
+    for (i=0; i<n; i++)
+    {
+        printf("%d ", a[i]);
+    }
+    
+	max1=a[0];
+    max2=a[1];
+   
+    for( i=2;i<n; i++)
+ {
+    if(a[i]>=max1 && max1>max2)
+    {
+        max2=max1;
+        max1= a[i];
+    }
+    
+	else if(a[i]>= max1 && max1< max2)
+    {
+        max1=a[i];
+    }
+    
+	else;
+ }  
+    printf("max=%d \n", max1);
+    printf("second max=%d", max2);
+   
+    return 0;
+}
