@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main()
+{
+	int a,b; // declaring the varaibles 
+	
+	printf("Enter the value of a: \n");
+	scanf("%d",&a);
+	
+	printf("Enter the value of b: \n");
+	scanf("%d",&b);
+	
+	//Displaying values before swapping
+	printf("The intial values of a and b are:\n");
+	printf("a=%d",a);
+	printf("\nb=%d",b);
+
+	//Swapping values using arithemic operators
+	a= a+b; 
+	b= a-b; // b=(a+b)-b=a;therefore,b gets the intial value of a
+	a= a-b;	// a=(a+b)-a(the updated value of b)=b;therefore, a gets intail value of b
+	
+	//declaring the swapped values
+	printf("\n The Final value of a is: %d \n",a);
+	printf("\n The Final value of b is: %d \n",b);
+	
+	return 0;
+}
