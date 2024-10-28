@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main()
+{
+	char d; //declaring the variables 
+	printf("Enter a character:"); //taking input from the user 
+	scanf("%c",&d); 
+	
+	(d>='a'&& d<='z')?  //setting the range of the entered varaible
+	
+	//displaying results
+	printf("The entered character is lowercase"):printf("The entered character is uppercase");
+}
