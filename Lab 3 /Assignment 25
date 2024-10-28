@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+	int num,i; //declaring variables
+	
+	printf("Enter a number to print its multiplication table: \n");
+	scanf("%d",&num); //taking input from user 
+	
+	printf("The table of number %d is: \n", num);
+	
+	for(i=1;i<=10;i++) //iteration for consecutive values of i
+	
+	{
+	printf(" %d x %d = %d \n",num,i,num*i);
+}
+	return 0;
+	
+	
+		
+}
