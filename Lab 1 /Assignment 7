@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{
+	float h,b,a; //declaring varaiables 
+	
+	printf("Enter the height of the traingle: \n"); //input from user 
+	scanf("%f",&h); 
+	
+	printf("Enter the breadth of the triangle: \n");
+	scanf("%f",&b);
+	
+	a= 0.5*h*b; //area of triangle
+	
+	printf("The area of the triangle is: %f sq units \n",a);
+	
+	return 0;
+	
+
+}
