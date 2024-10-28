@@ -1,0 +1,26 @@
+#include <stdio.h>
+int main()
+{
+	int num,g,sum=0,N;
+	
+	printf("Enter a number:");
+	scanf("%d",&num);
+	
+	N=num;
+	
+	while(num>0) {
+	g=num%10;
+	sum=sum+(g*g*g);
+	num/=10;
+	}
+	
+	if (N==sum) {
+	printf("The number is an Armstrong Number");
+	}
+
+	else {
+	printf("The number is not an Armstrong Number");
+
+	return 0;
+}
+}
