@@ -1,0 +1,25 @@
+#include <stdio.h>
+int main()
+{
+
+
+int num,g,sum=0; // Declaration & Initialization
+
+//User Input
+printf("Enter a number: ");
+scanf("%d", &num);
+
+//Iterating over each digit of inputted number
+while (num!=0) 
+{
+
+g=num%10;
+
+sum=sum+g;
+
+num=num/10;
+printf("The sum is: %d", sum);
+}
+
+return 0;
+}
