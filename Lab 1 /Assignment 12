@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+	char character;//declaring varaibles
+	
+	printf("Enter a character: \n"); //user input 
+	scanf("%c",&character);
+	
+	//displaying ASCII value for entered character
+	
+	printf("The required ASCII code is %d \n",(int)character);
+	
+	return 0;
+	
+	
+}
