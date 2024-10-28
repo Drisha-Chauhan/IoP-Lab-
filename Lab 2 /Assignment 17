@@ -1,0 +1,30 @@
+#include<stdio.h>
+int main()
+
+{
+	int a,b,c;
+	
+	printf("Enter the Value of the First integer:");
+    scanf("%d",&a);
+    
+    printf("Enter the Second integer:");
+  	scanf("%d",&b);
+  
+  	printf("Enter the Third integer:");
+  	scanf("%d",&c);
+  	
+  	if (a>b && b>c)
+  		printf("The Greatest integer is: %d ",a);
+  	
+  	else if (b>a && a>c)
+  		printf("The Greatest integer is: %d",b);
+  		
+  	else(c>a && a>b);
+	  	printf("The Greatest integer is: %d",c);
+		  
+	return 0;
+}
+  		
+  	
+  
+  	
