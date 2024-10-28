@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+	int N,i; //declaring the varaibles 
+	
+	printf("Enter the value of N: \n"); //taking input from the user 
+	scanf("%d",&N);
+	
+	printf("The factors of %d are: \n",N);
+	
+	for(i=1;i<=N;i++) //Checking for factors in all the values less than N
+	{
+		if (N%i==0)
+		{
+		 printf("%d ",i); //Adding space in "	
+		}
+	}
+	
+	return 0;	
+}
