@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main()
+
+{
+	int n; //Declaring the variable
+		
+	printf("Enter the value of N: \n "); //Taking input from the user 
+	scanf("%d", &n); //Assigning input value to the variable  
+
+	for (int i = 1; i<=n; i++)  
+	{
+	printf("%d ", i*i); //As the value of i prescends, we get the sqaures of naturnal numbers  
+		}
+
+ return 0; //exit statement 
+}
