@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main()
+
+{
+	int n; //Declaring variables 
+
+	printf("Enter the value of N: \n"); //Taking input from the user  
+	scanf("%d", &n); //Assigning input value to the variable 
+
+	printf("Even numbers from 2 to %d:\n", n);
+	
+	 for (int i = 2; i <= n; i += 2) //The loop keeps performing +2 such that the value of i is always even 
+	{
+	printf("%d ",i); 
+	}
+	 return 0;
+}
