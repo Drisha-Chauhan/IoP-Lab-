@@ -1,0 +1,54 @@
+#include <stdio.h>
+#include <ctype.h>
+
+void countFileAttributes(const char *filename) {
+    
+	FILE *file = fopen(filename, "r");
+    
+	if (file == NULL) {
+        printf("Error opening file!\n");
+        return;
+    }
+
+    int characters = 0, words = 0, lines = 0;
+    char ch;
+    int inWord = 0;
+
+    while ((ch = fgetc(file)) != EOF) {
+        characters++;
+
+        if (ch == '\n') {
+            lines++;
+        }
+
+        if (isspace(ch)) {
+            if (inWord) {
+                words++;
+                inWord = 0;
+            }
+        } else {
+            inWord = 1;
+        }
+    }
+
+    if (inWord) {
+    
+	    words++;  
+
+    fclose(file);
+
+    printf("Characters: %d\n", characters);
+    
+	printf("Words: %d\n", words);
+    
+	printf("Lines: %d\n", lines);
+}
+
+int main() {
+    
+	const char *filename = "textfile.txt";  
+    
+	countFileAttributes(filename);
+    
+	return 0;
+}
