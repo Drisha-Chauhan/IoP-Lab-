@@ -1,0 +1,43 @@
+#include <stdio.h>
+#include <math.h>
+
+	void flip(int *number, int n)
+	{
+    	int temp = *number;
+    	int flipped = 0;
+    	int count = 0;
+
+    while (count < n) {
+       
+	    int digit = temp % 10;
+        
+		flipped = flipped * 10 + digit;
+        
+		temp /= 10;
+        
+		count++;
+    }
+
+    temp = *number / pow(10, n);
+
+    *number = temp * pow(10, n) + flipped;
+}
+
+int main() 
+	
+{
+    
+	int number, n;
+
+    printf("Enter a number: ");
+    scanf("%d", &number);
+
+    printf("Enter the number of digits to flip: ");
+    scanf("%d", &n);
+
+    flip(&number, n);
+
+    printf("The number after flipping the last %d digits is: %d\n", n, number);
+    
+}
+
