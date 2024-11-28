@@ -1,0 +1,46 @@
+#include <stdio.h>
+
+enum Color {
+    RED = 0xFF0000,
+    GREEN = 0x00FF00,
+    BLUE = 0x0000FF,
+    YELLOW = 0xFFFF00,
+    CYAN = 0x00FFFF,
+    MAGENTA = 0xFF00FF
+};
+
+int main() {
+    enum Color color;
+    int choice;
+
+    printf("Enter a color (1 for Red, 2 for Green, 3 for Blue, 4 for Yellow, 5 for Cyan, 6 for Magenta): ");
+    scanf("%d", &choice);
+
+    switch (choice) {
+        case 1:
+            color = RED;
+            break;
+        case 2:
+            color = GREEN;
+            break;
+        case 3:
+            color = BLUE;
+            break;
+        case 4:
+            color = YELLOW;
+            break;
+        case 5:
+            color = CYAN;
+            break;
+        case 6:
+            color = MAGENTA;
+            break;
+        default:
+            printf("Invalid choice\n");
+            return 1;
+    }
+
+    printf("Hexadecimal color code: #%06X\n", color);
+
+    return 0;
+}
