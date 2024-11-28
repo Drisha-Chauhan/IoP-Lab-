@@ -1,0 +1,49 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+
+int countVowels(char *filename);
+
+int main() {
+    char filename[100];
+    int vowelCount;
+
+    printf("Enter the name of the file to read: ");
+    scanf("%s", filename);
+
+    // Count vowels
+    vowelCount = countVowels(filename);
+
+    if (vowelCount >= 0) {
+        printf("The number of vowels in the file '%s' is: %d\n", filename, vowelCount);
+    } else {
+        printf("Error: Could not open the file '%s'\n", filename);
+    }
+
+    return 0;
+}
+
+int countVowels(char *filename) {
+    FILE *file;
+    char ch;
+    int count = 0;
+
+    // Open the file in read mode
+    file = fopen(filename, "r");
+    if (file == NULL) {
+        return -1;  // Return -1 if file couldn't be opened
+    }
+
+    // Read the file character by character
+    while ((ch = fgetc(file)) != EOF) {
+        ch = tolower(ch);  // Convert character to lowercase for easy comparison
+        if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+            count++;
+        }
+    }
+
+    // Close the file
+    fclose(file);
+
+    return count;
+}
